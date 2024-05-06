@@ -80,88 +80,102 @@ import products from "./data.js";
 // console.log(result);
 
 // 6-masala;
-let people = [
-  { name: "John", age: 13 },
-  { name: "Mark", age: 56 },
-  { name: "Rachel", age: 45 },
-  { name: "Nate", age: 67 },
-  { name: "Jeniffer", age: 65 },
-];
+// let people = [
+//   { name: "John", age: 13 },
+//   { name: "Mark", age: 56 },
+//   { name: "Rachel", age: 45 },
+//   { name: "Nate", age: 67 },
+//   { name: "Jeniffer", age: 65 },
+// ];
 
-people.sort((a, b) => {
-  return a.age - b.age;
-});
-const young = people[0];
-const youngName = people[0].name;
-const old = people[people.length - 1];
-const oldName = old.name;
-const differentAge = old.age - young.age;
-console.log(
- ` eng yoshi ${youngName} eng kattasi ${oldName} ularning yoshlari orasidagi farq ${differentAge} `
-);
+// people.sort((a, b) => {
+//   return a.age - b.age;
+// });
 
+// console.log(
+//   ` eng yoshi ${people[0].name} eng kattasi ${
+//     people[people.length - 1].name
+//   } ularning yoshlari orasidagi farq ${
+//     people[people.length - 1].age - people[0].age
+//   }. `
+// );
 
 // 7-masala;
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-// let even = numbers.filter((number) => number % 2 === 0);
-// let old = numbers.filter((number) => number % 2 !== 0);
-// console.log(even);
-// console.log(old);
+
+// const juft = numbers.filter((number) => number % 2 == 0);
+// const toq = numbers.filter((number) => number % 2 == 1);
+
+// console.log("Juvt sonlar:", juft);
+// console.log("Toq sonlar:", toq);
 
 // 8-masala;
-// const numbers = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
-// const nonRepeating = (arr) => {
-//   const checking = arr.reduce((acc, value) => {
-//     if (!acc.includes(value)) {
-//       acc.push(value);
+// const numbers = [1, 2, 3, 4, 5, 1, 2, 3, 4, 3, 2, 5];
+// let noRepeat = (item) => {
+//   let number = item.reduce((acc, vall) => {
+//     if (!acc.includes(vall)) {
+//       acc.push(vall);
 //     }
 //     return acc;
 //   }, []);
-//   return checking;
+//   return number;
 // };
-// const result = nonRepeating(numbers);
-// console.log(result);
+
+// console.log(noRepeat(numbers));
 
 // 9-masala
+
+// id si bo'yicha sortlaymiz
+
+// let sortingId = products.sort((a, b) => {
+//   return a.id - b.id;
+// });
+// console.log(sortingId);
+
 // narhi o'sishi  bo'yicha tartiblaymiz
 // let sortingPrice = products.sort((a, b) => {
 //   return a.price - b.price;
 // });
 // console.log(sortingPrice);
 
-// 10-masala
-// reyting bo'yicha eng kattasi
-// let sortingReyting = products.sort((a, b) => {
+//rating boyocha sortlaymiz
+
+// let sortingRating = products.sort((a, b) => {
 //   return a.rating - b.rating;
 // });
-// const highestRating = sortingReyting[sortingReyting.length - 1];
-// console.log(highestRating);
+// console.log(sortingRating);
+
+// 10-masala
+// let sortingRayting = products.sort((a, b) => {
+//   return a.rating - b.rating;
+// });
+// const bigRating = sortingRayting[sortingRayting.length - 1];
+// console.log(bigRating);
 
 // 11-masala;
-// narhi bo'yicha eng pasti
 // let sortingPrice = products.sort((a, b) => {
 //   return a.price - b.price;
 // });
-// const highestPrice = sortingPrice[0];
-// console.log(highestPrice);
+// const lowtPrice = sortingPrice[0];
+// console.log(lowtPrice);
 
 // 12-masala
-// let sumPrice = products.reduce((acc, val) => {
+// let allPrice = products.reduce((acc, val) => {
 //   return acc + val.price;
 // }, 0);
-// console.log(sumPrice);
+// console.log(allPrice);
 
 // 13-masala;
-// let productName = products.map((product) => {
+// let productsName = products.map((product) => {
 //   return product.title;
 // });
-// console.log(productName);
+// console.log(productsName);
 
 // 14-masala
-// const findIdName = products.find((product) => {
+// const findIdfife = products.find((product) => {
 //   return product.id === 5;
 // });
-// console.log(findIdName.title);
+// console.log(findIdfife.title);
 
 // 15-masala
 // let acsesuar = [
@@ -201,13 +215,13 @@ console.log(
 //     discount: 30,
 //   },
 // ];
-// let deleteProudact = acsesuar.filter((acsesuar) => acsesuar.id !== 4);
-// console.log(deleteProudact);
+// let deleteProudactfour = acsesuar.filter((acsesuar) => acsesuar.id !== 4);
+// console.log(deleteProudactfour);
 
 // 16-masala
-// let myName = "Mvlonbek";
-// let splited = myName.split("");
-// let letterChecking = splited.every((item) => /[a-zA-Z]/.test(item));
+// let myFirstName = "Farhod";
+// let splited = myFirstName.split("");
+// let letterChecking = splited.every((letter) => /[a-zA-Z]/.test(letter));
 // console.log(letterChecking);
 
 // 17-masala;
@@ -256,7 +270,7 @@ console.log(
 
 const pupils = [
   {
-    name: "Elbek",
+    name: "Farhod",
     protcent: 95,
   },
   {
