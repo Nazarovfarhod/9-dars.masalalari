@@ -50,11 +50,10 @@ import products from "./data.js";
 // }, {});
 // console.log(sameName);
 
-
 // 3-masala
 // let numbers = [1, 2, 3, 4, 5];
-// let result = numbers.map((number) => {
-//   return number ** 2;
+// let result = numbers.map((item) => {
+//   return item ** 2;
 // });
 // console.log(result);
 
@@ -64,9 +63,9 @@ import products from "./data.js";
 //   .filter((num) => {
 //     return num > 0;
 //   })
-//   .reduce((acc, num) => {
-//     return (acc += num);
-//   }, 0);
+//   .reduce((acc, vall) => {
+//     return (acc += vall);
+//   });
 // console.log(result);
 
 // 5-masala
@@ -81,25 +80,26 @@ import products from "./data.js";
 // console.log(result);
 
 // 6-masala;
-// let people = [
-//   { name: "John", age: 13 },
-//   { name: "Mark", age: 56 },
-//   { name: "Rachel", age: 45 },
-//   { name: "Nate", age: 67 },
-//   { name: "Jeniffer", age: 65 },
-// ];
+let people = [
+  { name: "John", age: 13 },
+  { name: "Mark", age: 56 },
+  { name: "Rachel", age: 45 },
+  { name: "Nate", age: 67 },
+  { name: "Jeniffer", age: 65 },
+];
 
-// people.sort((a, b) => {
-//   return a.age - b.age;
-// });
-// const youngest = people[0];
-// const youngestName = people[0].name;
-// const old = people[people.length - 1];
-// const oldName = old.name;
-// const differentAge = old.age - youngest.age;
-// console.log(
-//   eng yoshi ${youngestName} eng kattasi ${oldName} ularning yoshlari orasidagi farq ${differentAge}
-// );
+people.sort((a, b) => {
+  return a.age - b.age;
+});
+const young = people[0];
+const youngName = people[0].name;
+const old = people[people.length - 1];
+const oldName = old.name;
+const differentAge = old.age - young.age;
+console.log(
+ ` eng yoshi ${youngName} eng kattasi ${oldName} ularning yoshlari orasidagi farq ${differentAge} `
+);
+
 
 // 7-masala;
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
